@@ -10,7 +10,9 @@ class AppClass extends React.Component {
   // }
 
   state = {
-    name: "Warren"
+    name: "Warren",
+    age: 33,
+    profession: "professor"
   }
 
   componentDidMount() {
