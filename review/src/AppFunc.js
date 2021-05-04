@@ -4,6 +4,8 @@ const AppFunc = () => {
   console.log("AppFunc: Component loads state");
   const [name, setName] = useState("Warren");
   
+  
+
   const handleClick = () => {
     console.log("AppFunc: Component changes state");
     setName("Allison");
