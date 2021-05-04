@@ -2,7 +2,7 @@ import React from 'react';
 
 class Poki extends React.Component {
   componentDidMount() {
-    console.log(`Poki ${this.props.pokemon.name}: Component Mounts`);
+    console.log(`Poki: Component Mounts`);
   }
 
   componentDidUpdate() {
@@ -11,7 +11,7 @@ class Poki extends React.Component {
 
   render() {
       const { pokemon } = this.props;
-      console.log(`Poki ${pokemon.name}: Component Renders`);
+      console.log(`Poki: Component Renders`);
       return(
       <div key={pokemon.id} className="pokemon">
         <img src={pokemon.img} alt={pokemon.name} />
