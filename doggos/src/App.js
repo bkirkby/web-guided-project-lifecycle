@@ -27,7 +27,6 @@ class App extends React.Component {
     //5. Add in images to state.
     handleFormChange = (e)=>{
         this.setState({
-            ...this.state,
             breed: e.target.value
         });
     }
@@ -38,6 +37,7 @@ class App extends React.Component {
 
 
     render() {
+        console.log(this.state.breed);
         return(<div className="App">
             <h1>Dog Search Api v1.0</h1>
 
