@@ -9,6 +9,7 @@ class AppClass extends React.Component {
   }
 
   handleNameButtonClick = (e) => {
+    console.log("AppClass: Component Changes State.");
     this.setState({
       ...this.state,
       name: "Allison"
@@ -17,6 +18,7 @@ class AppClass extends React.Component {
 
   
   render() {
+    console.log("AppClass: Component renders DOM.");
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
