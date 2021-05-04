@@ -2,7 +2,7 @@ import React from 'react';
 
 class Poki extends React.Component {
   componentDidMount() {
-    console.log(`Poki ${pokemon.name}: Component Mounts`);
+    console.log(`Poki ${this.props.pokemon.name}: Component Mounts`);
   }
 
   componentDidUpdate() {
