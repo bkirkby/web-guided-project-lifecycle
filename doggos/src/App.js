@@ -10,7 +10,6 @@ class App extends React.Component {
     componentDidMount() {
         axios.get('https://dog.ceo/api/breed/husky/images')
             .then(resp=> {
-                console.log('resp: ', resp);
                 this.setState({
                     dogImages: resp.data.message
                 });
@@ -32,13 +31,12 @@ class App extends React.Component {
     }
 
     handleFormSubmit = () => {
-
+        axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images`)
+            
     }
 
 
     render() {
-        console.log(this.state.breed);
-        
         return(<div className="App">
             <h1>Dog Search Api v1.0</h1>
 
