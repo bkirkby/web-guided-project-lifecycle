@@ -19,12 +19,18 @@ class App extends React.Component {
             });
     }
 
+    //1. Add in state for breed.
+    //2. add in onChange to collect breed from user
+    //3. add in onSubmit
+    //4. run Axios call in onSubmit to get breed's images
+    //5. Add in images to state.
+
     render() {
         return(<div className="App">
             <h1>Dog Search Api v1.0</h1>
 
             <form>
-                <input/>
+                <input />
                 <button>Fetch Dogs</button>
             </form>
 
