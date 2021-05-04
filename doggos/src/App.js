@@ -23,7 +23,7 @@ class App extends React.Component {
     //1. Add in state for breed.
     //2. Add in onChange to collect breed from user
     //3. Add in onSubmit
-    //4. Run Axios call in onSubmit to get breed's images
+    //4. Run axios call in onSubmit to get breed's images
     //5. Add in images to state.
 
     render() {
