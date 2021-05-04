@@ -26,7 +26,6 @@ class AppClass extends React.Component {
   handleNameButtonClick = (e) => {
     console.log("AppClass: Component Changes State.");
     this.setState({
-      ...this.state,
       name: "Allison"
     });
   };
