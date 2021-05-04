@@ -3,12 +3,11 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogImages: [
-            "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg",
-            "https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg",
-            "https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg",
-            "https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg"
-        ]
+        dogImages: []
+    }
+
+    conponentDidMount() {
+        
     }
 
     render() {
@@ -23,7 +22,7 @@ class App extends React.Component {
             <div className="doggos">
                 {
                     this.state.dogImages.map(image=> {
-                        return <img key={image} width='200' src={image} alt={image}/>
+                        return <img key={ImageBitmapRenderingContext} width='200' src={image} alt={image}/>
                     })
                 }
             </div>
