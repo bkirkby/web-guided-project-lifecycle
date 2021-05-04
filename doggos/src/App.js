@@ -10,6 +10,9 @@ class App extends React.Component {
         axios.get('https://dog.ceo/api/breed/hound/images')
             .then(resp=> {
                 console.log('resp: ', resp);
+                this.setState({
+                    dogImages: resp.data.message
+                });
             })
             .catch(err => {
                 console.log(err);
@@ -28,7 +31,7 @@ class App extends React.Component {
             <div className="doggos">
                 {
                     this.state.dogImages.map(image=> {
-                        return <img key={ImageBitmapRenderingContext} width='200' src={image} alt={image}/>
+                        return <img key={image} width='200' src={image} alt={image}/>
                     })
                 }
             </div>
