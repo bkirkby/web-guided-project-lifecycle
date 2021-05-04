@@ -32,9 +32,13 @@ class AppClass extends React.Component {
   render() {
     console.log("AppClass: Component Renders DOM.");
 
+    const showHello = false;
+
     return (
       <div>
-        <h1>Hello {this.state.name}.</h1>
+        {
+          showHello ? (<h1>Hello {this.state.name}.</h1>) : <p> Loading</p>
+        }
         <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
       </div>
     );
