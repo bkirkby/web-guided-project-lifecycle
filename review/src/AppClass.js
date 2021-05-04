@@ -1,13 +1,13 @@
 import React from "react";
 
 class AppClass extends React.Component {
-  constructor() {
-    console.log("AppClass: Component Loads State");
-    super();
-    this.state = {
-      name: "Warren"
-    };
-  }
+  // constructor() {
+  //   console.log("AppClass: Component Loads State");
+  //   super();
+  //   this.state = {
+  //     name: "Warren"
+  //   };
+  // }
 
   componentDidMount() {
     console.log("AppClass: Component Has Mounted");
@@ -27,7 +27,7 @@ class AppClass extends React.Component {
 
   render() {
     console.log("AppClass: Component Renders DOM.");
-    
+
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
