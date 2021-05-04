@@ -10,7 +10,7 @@ class App extends React.Component {
                 <button>Fetch Dogs</button>
             </form>
             <div className="doggos">
-                
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
             </div>
         </div>);
     }
