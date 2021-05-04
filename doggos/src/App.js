@@ -25,7 +25,7 @@ class App extends React.Component {
     //3. Add in onSubmit
     //4. Run axios call in onSubmit to get breed's images
     //5. Add in images to state.
-    handleFormChange = ()=>{
+    handleFormChange = (e)=>{
 
     }
 
