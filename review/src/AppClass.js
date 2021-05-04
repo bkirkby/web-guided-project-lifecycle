@@ -26,6 +26,7 @@ class AppClass extends React.Component {
   handleNameButtonClick = (e) => {
     console.log("AppClass: Component Changes State.");
     this.setState({
+      ...this.state,
       name: "Allison"
     });
   };
@@ -40,6 +41,7 @@ class AppClass extends React.Component {
         {
           showHello ? (<h1>Hello {this.state.name}.</h1>) : <p> Loading</p>
         }
+        <Person name={this.state.name} profession={this.state.profession}/>
         <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
       </div>
     );
