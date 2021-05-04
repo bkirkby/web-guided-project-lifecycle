@@ -24,6 +24,12 @@ class App extends React.Component {
     //3. Add in onSubmit
     //4. Run axios call in onSubmit to get breed's images
     //5. Add in images to state.
+
+    componentDidUpdate(prevProps, prevState) {
+        
+
+    }
+
     handleFormChange = (e)=>{
         this.setState({
             breed: e.target.value
@@ -42,7 +48,6 @@ class App extends React.Component {
                 console.log(err);
             });
     }
-
 
     render() {
         return(<div className="App">
