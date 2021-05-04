@@ -38,6 +38,7 @@ class App extends React.Component {
 
     render() {
         console.log(this.state.breed);
+        
         return(<div className="App">
             <h1>Dog Search Api v1.0</h1>
 
