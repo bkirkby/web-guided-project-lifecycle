@@ -32,7 +32,8 @@ class App extends React.Component {
                 axios.get('https://dog.ceo/api/breed/husky/images')
                     .then(resp=> {
                         this.setState({
-                            dogImages: resp.data.message
+                            dogImages: resp.data.message,
+                            breed: "husky"
                         });
                     })
                     .catch(err => {
