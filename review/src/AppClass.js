@@ -19,7 +19,7 @@ class AppClass extends React.Component {
 
   
   render() {
-    console.log("AppClass: Component renders DOM.");
+    console.log("AppClass: Component Renders DOM.");
     return (
       <div>
         <h1>Hello {this.state.name}.</h1>
