@@ -32,7 +32,9 @@ class App extends React.Component {
 
     handleFormSubmit = () => {
         axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images`)
-            
+            .then(resp=> {
+                console.log(resp)''
+            })
     }
 
 
