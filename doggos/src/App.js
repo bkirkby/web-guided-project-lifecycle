@@ -11,6 +11,12 @@ class App extends React.Component {
             </form>
             <div className="doggos">
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
             </div>
         </div>);
     }
