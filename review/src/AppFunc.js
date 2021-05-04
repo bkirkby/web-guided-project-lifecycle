@@ -9,7 +9,7 @@ const AppFunc = () => {
   }, []);
 
   useEffect(()=>{
-    console.log("AppFunc: Componet State has changed");
+    console.log("AppFunc: Component State has changed");
   });
 
   const handleClick = () => {
