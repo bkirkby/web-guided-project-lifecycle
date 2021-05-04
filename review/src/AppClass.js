@@ -2,6 +2,7 @@ import React from "react";
 
 class AppClass extends React.Component {
   constructor() {
+    console.log("AppClass: Component Loads State");
     super();
     this.state = {
       name: "Warren"
