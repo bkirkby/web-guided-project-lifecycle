@@ -30,11 +30,15 @@ class App extends React.Component {
         });
     }
 
-    handleFormSubmit = () => {
+    handleFormSubmit = (e) => {
+        e.preventDefault();
         axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images`)
             .then(resp=> {
-                console.log(resp)''
+                console.log(resp);
             })
+            .catch(err=>{
+                console.log(err);
+            });
     }
 
 
