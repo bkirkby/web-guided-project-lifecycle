@@ -6,8 +6,9 @@ class App extends React.Component {
         dogImages: []
     }
 
-    conponentDidMount() {
-        
+    componentDidMount() {
+        axios.get('https://dog.ceo/api/breed/hound/images')
+
     }
 
     render() {
