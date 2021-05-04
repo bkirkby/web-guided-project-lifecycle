@@ -9,8 +9,8 @@ class App extends React.Component {
                 <input/>
                 <button>Fetch Dogs</button>
             </form>
-            <div>
-
+            <div className="doggos">
+                
             </div>
         </div>);
     }
