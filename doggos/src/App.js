@@ -39,7 +39,7 @@ class App extends React.Component {
             <h1>Dog Search Api v1.0</h1>
 
             <form onSubmit={this.handleFormSubmit}>
-                <input onChange={this.handleFormChange}/>
+                <input value={this.state.breed} onChange={this.handleFormChange}/>
                 <button>Fetch Dogs</button>
             </form>
 
