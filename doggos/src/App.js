@@ -19,15 +19,11 @@ class App extends React.Component {
             </form>
 
             <div className="doggos">
-                <img width='200' src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img width='200'src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                {
+                    dogImages.map(image=> {
+                        return <img width='200' src={image} alt={image}/>
+                    })
+                }
             </div>
         </div>);
     }
