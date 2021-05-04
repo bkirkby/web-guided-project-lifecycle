@@ -10,6 +10,7 @@ class App extends React.Component {
             "https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg"
         ]
     }
+
     render() {
         return(<div className="App">
             <h1>Dog Search Api v1.0</h1>
@@ -21,8 +22,8 @@ class App extends React.Component {
 
             <div className="doggos">
                 {
-                    dogImages.map(image=> {
-                        return <img width='200' src={image} alt={image}/>
+                    this.state.dogImages.map(image=> {
+                        return <img key={image} width='200' src={image} alt={image}/>
                     })
                 }
             </div>
