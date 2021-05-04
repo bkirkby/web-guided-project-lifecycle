@@ -26,7 +26,10 @@ class App extends React.Component {
     //5. Add in images to state.
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevState.dogImages !== this.state.dogImages)
+        console.log("change of any kind");
+        if (prevState.dogImages !== this.state.dogImages) {
+            console.log("change in images");
+        }
     }
 
     handleFormChange = (e)=>{
