@@ -4,6 +4,11 @@ class Poki extends React.Component {
   componentDidMount() {
     console.log("Poki: Component Mounts");
   }
+
+  componentDidUpdate() {
+    console.log("Poki: Component Updates");
+  }
+
   render() {
       const { pokemon } = this.props;
       console.log("Poki: Component Renders");
