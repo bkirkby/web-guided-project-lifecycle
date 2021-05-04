@@ -1,15 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Poki from './Poki';
 
-function Pokemon(props) {
-  return (
-    <>
-      {props.pokemon.map(pokemon => (
-        <Poki pokemon={pokemon}/>
-      ))}
-    </>
-  );
+class Pokemon extends React.Component {
+  componentDidMount() {
+    console.log("Pokemon: Component Mounts");
+  }
+
+  componentDidUpdate() {
+    console.log("Pokemon: Component Updates");
+  }
+
+  render() {
+    console.log("Pokemon: Component Renders");
+    return (
+      <>
+        {this.props.pokemon.map(pokemon => (
+          <Poki key={pokemon.id} pokemon={pokemon}/>
+        ))}
+      </>
+    );
+  }
 }
 
 export default Pokemon;
