@@ -8,6 +8,14 @@ class App extends React.Component {
     dogs: []
   }
 
+  componentDidMount() {
+    axios.get('https://images.dog.ceo/breeds/hound-english/n02089973_2404.jpg')
+      .then(res => {
+        console.log('bk: App.js: cdm: fetch dogs: res: ', res)
+      })
+      .catch(err => console.error('unable to retrieve dogs: ', err))
+  }
+
   render() {
     return (
       <div>
