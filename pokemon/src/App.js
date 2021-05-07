@@ -10,6 +10,11 @@ class App extends React.Component {
     pokemon: []
   }
 
+  constructor() {
+    super();
+    // make an api call then update state
+  }
+
   componentDidMount() {
     setTimeout(() => {
       this.setState({
