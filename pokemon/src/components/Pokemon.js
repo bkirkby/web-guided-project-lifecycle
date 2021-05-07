@@ -5,8 +5,8 @@ import Poki from './Poki';
 function Pokemon(props) {
   return (
     <>
-      {props.pokemon.map(pokemon => (
-        <Poki pokemon={pokemon}/>
+      {props.pokemon.map(poki => (
+        <Poki poki={poki} />
       ))}
     </>
   );
