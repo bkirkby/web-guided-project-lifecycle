@@ -25,6 +25,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('bk: App.js: render')
     return (
       <div>
         <h1>hello {this.state.name}</h1>
