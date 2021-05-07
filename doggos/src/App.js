@@ -23,6 +23,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>some nice doggos!</h1>
+        <div><button>get hounds</button><button>get africans</button></div>
         {this.state.dogs.map(dogImageUrl => {
           return <img alt="dog image" src={dogImageUrl} key={dogImageUrl} />
         })}
