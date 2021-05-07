@@ -27,7 +27,7 @@ class App extends React.Component {
     })
   }
 
-  handlkeAfricans = e => {
+  handleAfricans = e => {
     e.preventDefault();
     this.setState({
       breed: 'african'
