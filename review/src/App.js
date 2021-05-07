@@ -1,5 +1,14 @@
 import React from 'react';
 
+class SomeComp extends React.Component {
+
+  render() {
+    return (
+      <div>this is a different component</div>
+    )
+  }
+}
+
 class App extends React.Component {
 
   constructor() {
