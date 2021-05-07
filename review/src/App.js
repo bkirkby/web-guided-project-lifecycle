@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>hello {this.state.name}</h1>
-        <button>make it brian</button>
+        <button onClick={this.handleClick}>make it brian</button>
       </div>
     )
   }
