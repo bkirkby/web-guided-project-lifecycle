@@ -20,13 +20,16 @@ class SomeComp extends React.Component {
 }
 
 class App extends React.Component {
-
-  constructor() {
-    super();
-    this.state = {
-      name: 'kirkby'
-    }
+  state = {
+    name: 'kirkby'
   }
+
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     name: 'kirkby'
+  //   }
+  // }
 
   handleClick = e => {
     e.preventDefault();
