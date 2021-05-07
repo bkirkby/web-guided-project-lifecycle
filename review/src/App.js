@@ -34,6 +34,10 @@ class App extends React.Component {
     console.log('bk: App.js: CDM called')
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log('bk: App.js: CDU called: prevProps, prevState: ', prevProps, prevState)
+  }
+
   render() {
     console.log('bk: App.js: App: render')
     return (
