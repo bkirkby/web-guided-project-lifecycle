@@ -2,6 +2,7 @@ import React from 'react';
 
 class SomeComp extends React.Component {
   render() {
+    console.log('bk: SomeComp: render')
     return (
       <div>this is a different component</div>
     )
@@ -25,7 +26,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('bk: App.js: render')
+    console.log('bk: App.js: App: render')
     return (
       <div>
         <h1>hello {this.state.name}</h1>
