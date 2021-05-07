@@ -9,12 +9,6 @@ class App extends React.Component {
   state = {
     pokemon: data
   }
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     pokemon: data
-  //   };
-  // }
 
   render() {
     return (
