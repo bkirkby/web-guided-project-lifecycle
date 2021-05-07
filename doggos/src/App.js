@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://images.dog.ceo/breeds/hound-english/n02089973_2404.jpg')
+    axios.get('https://dog.ceo/api/breed/hound/images/random/3')//https://images.dog.ceo/breeds/hound-english/n02089973_2404.jpg')
       .then(res => {
         console.log('bk: App.js: cdm: fetch dogs: res: ', res)
       })
