@@ -20,6 +20,20 @@ class App extends React.Component {
       .catch(err => console.error('unable to retrieve dogs: ', err))
   }
 
+  handleHounds = e => {
+    e.preventDefault();
+    this.setState({
+      breed: 'hound'
+    })
+  }
+
+  handlkeAfricans = e => {
+    e.preventDefault();
+    this.setState({
+      breed: 'african'
+    })
+  }
+
   render() {
     return (
       <div>
