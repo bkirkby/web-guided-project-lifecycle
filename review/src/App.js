@@ -1,6 +1,11 @@
 import React from 'react';
 
 class SomeComp extends React.Component {
+
+  componentDidMount() {
+    console.log('bk: SomeComp: CDM called')
+  }
+
   render() {
     console.log('bk: SomeComp: render')
     return (
