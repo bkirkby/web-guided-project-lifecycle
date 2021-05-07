@@ -6,6 +6,11 @@ class SomeComp extends React.Component {
     console.log('bk: SomeComp: CDM called')
   }
 
+  componentWillUnmount() {
+    console.log('bk: SomeComp: CWU called!')
+    // do some cleanup
+  }
+
   render() {
     console.log('bk: SomeComp: render')
     return (
