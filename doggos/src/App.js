@@ -5,7 +5,7 @@ import axios from 'axios';
 
 class App extends React.Component {
   state = {
-    dogs: ['https://images.dog.ceo/breeds/hound-english/n02089973_2404.jpg']
+    dogs: []
   }
 
   render() {
