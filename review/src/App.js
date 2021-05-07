@@ -54,7 +54,7 @@ class App extends React.Component {
       <div>
         <h1>hello {this.state.name}</h1>
         <button onClick={this.handleClick}>make it brian</button>
-        <SomeComp />
+        {this.state.name === 'brian' ? <SomeComp /> : <></>}
       </div>
     )
   }
