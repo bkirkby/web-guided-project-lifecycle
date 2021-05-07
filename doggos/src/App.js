@@ -20,6 +20,14 @@ class App extends React.Component {
       .catch(err => console.error('unable to retrieve dogs: ', err))
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.breed !== this.state.breed) {
+      axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images/random/3`)
+        .then(res => this.setState({ dogs: res.data.message }))
+        .catch(err => console.errors('unable to fetch dogs for breed: ', res, this.state.breed))
+    }
+  }
+
   handleHounds = e => {
     e.preventDefault();
     this.setState({
