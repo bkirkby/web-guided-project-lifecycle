@@ -25,6 +25,10 @@ class App extends React.Component {
     })
   }
 
+  componentDidMount() {
+    console.log('bk: App.js: CDM called')
+  }
+
   render() {
     console.log('bk: App.js: App: render')
     return (
