@@ -37,6 +37,10 @@ class App extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     console.log('bk: App.js: CDU called: prevProps, prevState: ', prevProps, prevState)
     // can compare prev with curr and see how it differs: prevState.name === this.state.name
+    if (prevState.name !== this.state.name) {
+      // name has changed, do something
+      console.log('bk: App.js: CDU: name has changed!!!!')
+    }
   }
 
   render() {
