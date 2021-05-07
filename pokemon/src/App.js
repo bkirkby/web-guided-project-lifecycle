@@ -12,7 +12,7 @@ class App extends React.Component {
 
   constructor() {
     super();
-    // not a good place to make an api call then update state
+    // not a good place to make an api call then initialize the state
   }
 
   componentDidMount() {
