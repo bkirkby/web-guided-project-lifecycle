@@ -9,6 +9,13 @@ class App extends React.Component {
     }
   }
 
+  handleClick = e => {
+    e.preventDefault();
+    this.setState({
+      name: 'brian'
+    })
+  }
+
   render() {
     return (
       <div>
